@@ -13,8 +13,8 @@ function updateData() {
     dayCountContainer.innerText = (Math.round(diff / 1000 / 60 / 60 / 24 * 100) / 100).toFixed(2);
     hourCountContainer.innerText = (Math.round(diff / 1000 / 60 / 60 * 100) / 100).toFixed(2);
     minuteCountContainer.innerText = (Math.round((diff / 1000 / 60) * 100) / 100).toFixed(2);
-    secondCountContainer.innerText = (Math.round((diff / 1000) * 1000) / 1000).toFixed(3);
-    return setInterval(updateData, 1000);
+    secondCountContainer.innerText = (Math.round((diff / 1000) * 1000) / 1000).toFixed(0);
+    return setInterval(updateData, 500);
 }
 
 updateData();
