@@ -17,7 +17,7 @@ function updateData() {
     secondCountContainer.innerText = (Math.round((diff / 1000) * 1000) / 1000).toFixed(3);
     milisecondCountContainer.innerText = diff;
 
-    return setInterval(updateData, 1);
+    return setInterval(updateData, 10);
 }
 
 updateData();
